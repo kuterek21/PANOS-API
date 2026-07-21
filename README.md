@@ -13,7 +13,9 @@
 # Install Libraries
 
  - pip3 install requests
+ - pip3 install xmltodict
 
+   
 # API Calls
 
 https://firewall/api/?type=op&cmd=<show><system><info></info></system></show>&key=
