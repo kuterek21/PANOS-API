@@ -1,0 +1,22 @@
+From the browser:
+
+https://FIREWALL/api/?type=op&cmd=%3Cshow%3E%3Csystem%3E%3Cinfo%3E%3C/info%3E%3C/system%3E%3C/show%3E&key=xxxxxx
+
+Use a requests library
+
+    import requestes
+
+sys_info = requests.get("https://FIREWALL/api/?type=op&cmd=%3Cshow%3E%3Csystem%3E%3Cinfo%3E%3C/info%3E%3C/system%3E%3C/show%3E&key=xxxxxxx")
+
+    print(sys_info)
+    print(sys_info.text) // to see all the details we need to convert it into a text output
+
+WE CAN CONVERT XML output IT INTO JSON (more readiable) BY IMPORTING : xmltodict
+
+    import xmltodict
+
+sys_info_dict = xmltodict.parse(sys_info.text)
+
+print(sys_info_dict)
+
+ONLINE XML to JSON converter 
