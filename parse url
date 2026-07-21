@@ -1,0 +1,8 @@
+
+FW_IP = ""
+API_ACTION = "/api/?type=op"
+API_ABC = ""
+API_KEY = ""
+
+
+API_CALL = (f"https://{FW_IP}{API_ACTION}&cmd={API_ABC}&key={API_KEY}")
